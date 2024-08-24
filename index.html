@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Buy Page with Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Product Store</h1>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="/Cgpt/Reviw.jpg" alt="Product Image 1" class="slide-image">
+                </div>
+                <div class="slide fade">
+                    <img src="/Cgpt/Reviw2.jpg" alt="Product Image 2" class="slide-image">
+                </div>
+                <div class="slide fade">
+                    <img src="/Cgpt/poider2.jpg" alt="Product Image 3" class="slide-image">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="product-info">
+                <h2 id="product-name">Product Name</h2>
+                <p id="product-description" class="product-description">This is a brief description of the product. It
+                    highlights key features and benefits.</p>
+                <p id="product-price" class="product-price">$99.99</p>
+
+                <div class="quantity">
+                    <button id="decrease" class="quantity-btn">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="quantity-input">
+                    <button id="increase" class="quantity-btn">+</button>
+                </div>
+
+                <button id="buy-now" class="buy-button">Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Product Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
